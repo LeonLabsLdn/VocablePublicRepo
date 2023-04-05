@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Bold.ttf">
+            <string>Roboto-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginButtonsView" customModule="Vocable" customModuleProvider="target">
+            <connections>
+                <outlet property="appleButton" destination="mPz-aa-gC9" id="Ucu-nr-4y1"/>
+                <outlet property="googleButton" destination="D5w-LD-Xgt" id="PTu-d0-G4f"/>
+                <outlet property="loginButton" destination="DX4-P6-htX" id="q12-WV-fSX"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="179"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D5w-LD-Xgt">
+                    <rect key="frame" x="0.0" y="63" width="390" height="53"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="53" id="lHV-Vd-smp"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" image="btn_google_light_normal_ios">
+                        <attributedString key="attributedTitle">
+                            <fragment content="Continue with Google">
+                                <attributes>
+                                    <color key="NSColor" red="0.57607781889999998" green="0.1306506395" blue="0.070503734050000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <font key="NSFont" size="20" name="Roboto-Bold"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                    </buttonConfiguration>
+                </button>
+                <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DX4-P6-htX">
+                    <rect key="frame" x="0.0" y="0.0" width="390" height="53"/>
+                    <color key="backgroundColor" red="0.20436352490000001" green="0.13110852240000001" blue="0.39217960829999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="53" id="yJ1-uU-6PO"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="20"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="Continue with email">
+                        <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mPz-aa-gC9">
+                    <rect key="frame" x="0.0" y="126" width="390" height="53"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="53" id="IwW-ag-PVF"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="D5w-LD-Xgt" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="8Tk-bJ-n97"/>
+                <constraint firstItem="mPz-aa-gC9" firstAttribute="top" secondItem="D5w-LD-Xgt" secondAttribute="bottom" constant="10" id="SJz-e4-4Qh"/>
+                <constraint firstItem="mPz-aa-gC9" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="W3s-Hn-VtG"/>
+                <constraint firstItem="D5w-LD-Xgt" firstAttribute="top" secondItem="DX4-P6-htX" secondAttribute="bottom" constant="10" id="Zwy-yh-9e2"/>
+                <constraint firstItem="D5w-LD-Xgt" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="jAx-Sh-QJ4"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="D5w-LD-Xgt" secondAttribute="trailing" id="k9y-ti-UIg"/>
+                <constraint firstItem="DX4-P6-htX" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="nSx-JC-epO"/>
+                <constraint firstItem="DX4-P6-htX" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="oo3-NR-EwK"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="mPz-aa-gC9" secondAttribute="trailing" id="y5E-Wx-AGi"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="102" y="21"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="btn_google_light_normal_ios" width="33.666667938232422" height="34.333332061767578"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
